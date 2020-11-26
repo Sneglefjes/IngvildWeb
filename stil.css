@@ -1,0 +1,39 @@
+
+/* Uten noen fortegn gjelder stilene for alle html-tagger som heter det som står, typ for body: <body /> */
+body {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* # betyr id, så her typ: #skriften treffer: <div id="skriften" /> */
+#skriften {
+    color: #ec9;
+    text-align: center;
+}
+
+/* . betyr klasser, så her typ: .feet: <img class="feet" /> og <h1 class="feet ogEnKlasseTil" /> */
+.knappHolder {
+    display: flex;
+    justify-content: center;
+}
+
+.feet {
+    background-color: #0df;
+    border: none;
+    height: 2em;
+    border-radius: 5px;
+}
+
+/* : er "sudoselektorer", som betyr noe litt spess, man :hover er hvordan elementet skal se ut når
+  man har musepekeren over elementet. I samme ånd har man focus og active, og en del mer. 
+  Man kan også si at noe skal for hvert n-te element i en spørring
+*/
+.feet:hover {
+    background-color: #0bc;
+}
+
