@@ -25,3 +25,14 @@ function byttSkrift() {
     // Her oppdaterer jeg overskriften med den verdien vi plukket
     skriften.textContent = nesteSkrift;
 }
+
+const knappen2 = document.querySelector("#knappen2")
+knappen2.addEventListener("click", skiftBakgrunnsFarge)
+
+function skiftBakgrunnsFarge() {
+    const nyFarge = `rgb(${(Math.floor(Math.random() * 255))}, ${(Math.floor(Math.random() * 255))}, ${(Math.floor(Math.random() * 255))})`
+    const body = document.querySelector("body")
+    body.style.backgroundColor = nyFarge
+}
+
+
